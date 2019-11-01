@@ -79,7 +79,7 @@ const Login = (props) => {
                     }
                 }
                 >
-                    ¿Aún no tienes cuenta? Registrate ya...
+                    ¿Aún no tienes cuenta? Registrate Ya
                     
 
                 </Text>
@@ -146,7 +146,7 @@ const styles = StyleSheet.create ({
     textAlign: 'center'
    },
    text2:{
-    color: 'black',
+    color: '#575756',
     fontSize: 15,
     textAlign: 'center',
     fontWeight: 'bold',

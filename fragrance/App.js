@@ -21,15 +21,14 @@ export default class App extends Component {
         vista: 'Login',
         value:''
     };
-
-    cambiarPantalla = (pantalla) => {
-
-      this.setState({
-          vista: pantalla,
-      });
-  };
-  
   }
+
+  cambiarPantalla = (pantalla) => {
+
+        this.setState({
+            vista: pantalla,
+        })
+    }
 
   render(){
     const { vista,value } = this.state;

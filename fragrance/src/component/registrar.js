@@ -13,34 +13,33 @@ import {
     StatusBar,    
 } from 'react-native';
 
+import bgImage from '../images/imglogin6.png';
+
 const Registrar = (props) => {
  
     const {cambiarPantalla} = props;
 
     return(
-    <ImageBackground>
-    <StatusBar backgroundColor="#AF6526"
-    /> 
-
-            <View>
-                <Text>
-                    Hello
-                </Text>
-            </View>
+    <ImageBackground source = {bgImage} style={styles.backgroundContainer}>
+        <StatusBar backgroundColor="#FBCECB"
+        />
+        <View>
+            <Text>
+                Hello
+            </Text>
+        </View>
     </ImageBackground>
     
     );
 }; 
 
 const styles = StyleSheet.create({
-    viw:{
+    backgroundContainer: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
     },
-  
     
 })
-
 
 export default Registrar;
