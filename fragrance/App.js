@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 
 import Login from './src/component/login';
+import Registrar from './src/component/registrar';
 
 
 export default class App extends Component {
@@ -41,11 +42,10 @@ export default class App extends Component {
           />
       );
      }
-     if(vista === 'sigin') {
+     if(vista === 'registrar') {
       return (
-          <Sigin
+          <Registrar
               cambiarPantalla={this.cambiarPantalla}
-              nombre = {this.guardarInput}
           />
       );
   }

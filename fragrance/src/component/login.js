@@ -10,21 +10,19 @@ import {
     Dimensions,
     TouchableOpacity,
     Button,
-    StatusBar,
-   
-    
-    
+    StatusBar,    
 } from 'react-native';
 
 import bgImage from '../images/imglogin6.png';
 import logo from '../images/imglogin4.png';
 
+
 const {width: WIDTH} = Dimensions.get('window')
 
 const Login = (props) => {
 
-    const {cambiarPantalla , cambiarText,nombre} = props;
-    const {guardarInput} = props;
+    const {cambiarPantalla} = props;
+    
  
     return(
         <ImageBackground  source = {bgImage} style={styles.backgroundContainer}>
@@ -42,7 +40,7 @@ const Login = (props) => {
 
                 <View style={styles.inputContainer}>
                     
-                    <TextInput onChangeText={cambiarText}
+                    <TextInput 
                     defaultValue={''}
                         style= {styles.input}
                         placeholder={'Username'}
@@ -66,14 +64,23 @@ const Login = (props) => {
                 <TouchableOpacity style={styles.btnLogin} 
                 onPress={
                     () => {
-                       // cambiarPantalla('sigin');
+                       cambiarPantalla('');
                     }
                 }
                 >
                     <Text style={styles.text}> Login </Text>
                 </TouchableOpacity>
                 <Text>
+                </Text>
+                <Text style ={styles.text2}
+                onPress={
+                    () => {
+                       cambiarPantalla('registrar');
+                    }
+                }
+                >
                     ¿Aún no tienes cuenta? Registrate ya...
+                    
 
                 </Text>
 
@@ -137,6 +144,13 @@ const styles = StyleSheet.create ({
     color: 'white',
     fontSize: 25,
     textAlign: 'center'
+   },
+   text2:{
+    color: 'black',
+    fontSize: 15,
+    textAlign: 'center',
+    fontWeight: 'bold',
+
    }
 }
 )
