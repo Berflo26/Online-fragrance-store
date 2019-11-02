@@ -58,7 +58,7 @@ const Login = (props) => {
                     placeholderTextColor={'rgba(255, 255, 255, 0.7)'}
                     underlineColorAndroid= 'transparent'
                 />             
-            </View>
+            </View>          
 
             
                 <TouchableOpacity style={styles.btnLogin} 
@@ -121,7 +121,7 @@ const styles = StyleSheet.create ({
     },
     input:{
         width: WIDTH - 55,
-        height: 45,
+        height: 48,
         borderRadius: 25,
         fontSize: 25,
         paddingLeft: 100,
