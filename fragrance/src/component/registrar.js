@@ -75,12 +75,12 @@ const Registrar = (props) => {
        />             
   </View>
   <TouchableOpacity style={styles.btnLogin} 
-     onPress={
-         () => {
-            cambiarPantalla('');
-         }
-     }
-     >
+  onPress={
+    () => {
+       cambiarPantalla('home');
+    }
+}
+>
          <Text style={styles.text}> Registrar </Text>
   </TouchableOpacity>
  

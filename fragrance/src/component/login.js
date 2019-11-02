@@ -34,7 +34,10 @@ const Login = (props) => {
                 <View style = {styles.logoContainer}> 
                     <Image source = {logo} style= {styles.logo}/>
                     <Text style = {styles.logoText}>
-                        FRAGRANCE SHOP
+                        FRAICHE
+                    </Text>
+                    <Text style = {styles.logoText2}>
+                         ¡Perfumando Nicaragua!
                     </Text>
                 </View>
 
@@ -62,16 +65,22 @@ const Login = (props) => {
 
             
                 <TouchableOpacity style={styles.btnLogin} 
+                
                 onPress={
                     () => {
-                       cambiarPantalla('');
+                       cambiarPantalla('home');
                     }
                 }
                 >
-                    <Text style={styles.text}> Login </Text>
+                  <Text style={styles.text}>
+                   Login 
+                  </Text>
+
                 </TouchableOpacity>
+                
                 <Text>
                 </Text>
+
                 <Text style ={styles.text2}
                 onPress={
                     () => {
@@ -80,8 +89,6 @@ const Login = (props) => {
                 }
                 >
                     ¿Aún no tienes cuenta? Registrate Ya
-                    
-
                 </Text>
 
             </ImageBackground>
@@ -150,7 +157,13 @@ const styles = StyleSheet.create ({
     fontSize: 15,
     textAlign: 'center',
     fontWeight: 'bold',
-
+   },
+   logoText2:{
+    color: 'black',
+    fontSize: 15,
+    fontWeight: 'bold',
+    marginTop:5,
+    opacity: 0.5,
    }
 }
 )

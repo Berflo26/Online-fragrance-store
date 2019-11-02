@@ -10,6 +10,7 @@ import {
 
 import Login from './src/component/login';
 import Registrar from './src/component/registrar';
+import Home from './src/component/home';
 
 
 export default class App extends Component {
@@ -41,13 +42,21 @@ export default class App extends Component {
           />
       );
      }
+
+     if(vista === 'home') {
+        return (
+          <Home
+              cambiarPantalla={this.cambiarPantalla}
+          />
+        );
+      }
+
      if(vista === 'registrar') {
       return (
           <Registrar
               cambiarPantalla={this.cambiarPantalla}
           />
-      );
-  }
-
+      );     
+     }
   }
 };
