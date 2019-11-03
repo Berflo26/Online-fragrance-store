@@ -11,6 +11,7 @@ import {
 import Login from './src/component/login';
 import Registrar from './src/component/registrar';
 import Home from './src/component/home';
+import Banner1 from './src/component/banner1';
 
 
 export default class App extends Component {
@@ -57,6 +58,14 @@ export default class App extends Component {
               cambiarPantalla={this.cambiarPantalla}
           />
       );     
+     }
+
+     if(vista === 'banner1') {
+       return (
+          <Banner1
+             cambiarPantalla = {this.cambiarPantalla}
+          />
+       );
      }
   }
 };

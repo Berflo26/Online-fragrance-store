@@ -13,7 +13,8 @@ import {
     StatusBar,
     TouchableWithoutFeedback,
     SafeAreaView,
-    ScrollView
+    ScrollView,
+    TouchableHighlight
 } from 'react-native';
 
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -29,15 +30,17 @@ const Home = (props) => {
         <ScrollView>
         <View style = {styles.container}>
         <StatusBar backgroundColor="#FBCECB"/>
+
         <TouchableWithoutFeedback>
-           <Icon
+           <Icon style = {styles.icn}
                name = "bars"
                color = "white"
                size = {27}
             />
          </TouchableWithoutFeedback>
+
          <Image style = {styles.logo} source = {require('../images/logo3.png')}/>
-           <Icon
+           <Icon style = {styles.icn}
            name = "search"
            color = "white"
            size = {27}
@@ -45,7 +48,14 @@ const Home = (props) => {
          </View>   
 
          <View>
+            <TouchableOpacity onPress={
+                () => {
+                   cambiarPantalla('banner1');
+                }
+            } >
             <Image style = {styles.containergal} source = {{uri:'http://www.fraiche.com.mx/tres-d/images/AndreaToscanoICE_nuevo.jpg'}}/>
+            </TouchableOpacity>
+
             <Image style = {styles.containergal} source = {{uri:'http://www.fraiche.com.mx/tres-d/images/20190328_banner_2_ilumina.jpg'}}/>
             <Image style = {styles.containergal} source = {{uri:'http://www.fraiche.com.mx/tres-d/images/banner4You.jpg'}}/>
             <Image style = {styles.containergal} source = {{uri:'http://www.fraiche.com.mx/tres-d/images/20190328_banner_5_torso_woman.jpg'}}/>
@@ -53,6 +63,8 @@ const Home = (props) => {
             <Image style = {styles.containergal} source = {{uri:'http://www.fraiche.com.mx/tres-d/images/BannerTS4FRAI.png'}}/>
             <Image style = {styles.containergal} source = {{uri:'http://www.fraiche.com.mx/tres-d/images/BannerMMFRAI.png'}}/>            
          </View> 
+
+         
         </ScrollView>
 
         </SafeAreaView>
@@ -78,9 +90,10 @@ const styles = StyleSheet.create({
         height: 130,
         marginTop:2,
         alignItems:"center",
-        justifyContent:"space-between",
-        alignItems:"center"
-         
+        justifyContent:"space-between"
+    },
+    icn:{
+        marginHorizontal:10
     }
     
 })
