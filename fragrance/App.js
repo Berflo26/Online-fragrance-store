@@ -4,8 +4,6 @@ import {
     View,
     Text,
     ImageBackground
-    
-
 } from 'react-native';
 
 import Login from './src/component/login';

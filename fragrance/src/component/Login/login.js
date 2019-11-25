@@ -16,6 +16,7 @@ import {
 import bgImage from '../images/imglogin6.png';
 import logo from '../images/imglogin4.png';
 
+
  
 const {width: WIDTH} = Dimensions.get('window')
 
@@ -68,7 +69,7 @@ const Login = (props) => {
                 
                 onPress={
                     () => {
-                       cambiarPantalla('home');
+                       props.navigation.navigate('home')
                     }
                 }
                 >
@@ -84,7 +85,7 @@ const Login = (props) => {
                 <Text style ={styles.text2}
                 onPress={
                     () => {
-                       cambiarPantalla('registrar');
+                       props.navigation.navigate('Registrar');
                     }
                 }
                 >

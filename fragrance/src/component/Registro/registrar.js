@@ -16,7 +16,6 @@ import {
 
 import bgImage from '../images/imglogin6.png';
 import logo from '../images/imglogin4.png';
-
 const {width: WIDTH} = Dimensions.get('window')
 const Registrar = (props) => {
  

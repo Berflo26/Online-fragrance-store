@@ -19,6 +19,7 @@ import {
 
 import Icon from 'react-native-vector-icons/FontAwesome';
 
+
 const Home = (props) => {
 
     const {cambiarPantalla} = props;
@@ -50,7 +51,7 @@ const Home = (props) => {
          <View>
             <TouchableOpacity onPress={
                 () => {
-                   cambiarPantalla('banner1');
+                   props.navigation.navigate('banner1')
                 }
             } >
             <Image style = {styles.containergal} source = {{uri:'http://www.fraiche.com.mx/tres-d/images/AndreaToscanoICE_nuevo.jpg'}}/>
