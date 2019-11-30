@@ -16,6 +16,7 @@ import {
 
 import bgImage from '../images/imglogin6.png';
 import logo from '../images/imglogin4.png';
+
 const {width: WIDTH} = Dimensions.get('window')
 const Registrar = (props) => {
  
@@ -31,7 +32,10 @@ const Registrar = (props) => {
        <View style = {styles.logoContainer}> 
        <Image source = {logo} style= {styles.logo}/>
        <Text style = {styles.logoText}>
-           REGISTRAR
+       FRAGRANCE
+       </Text>
+       <Text style = {styles.logoText2}>
+        ¡Perfumando Nicaragua!
        </Text>
    </View>
 
