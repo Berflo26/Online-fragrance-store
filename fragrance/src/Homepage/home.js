@@ -56,7 +56,7 @@ const Home = (props) => {
             } >
             <Image style = {styles.containergal} source = {{uri:'http://www.fraiche.com.mx/tres-d/images/AndreaToscanoICE_nuevo.jpg'}}/>
             </TouchableOpacity>
-
+            
             <Image style = {styles.containergal} source = {{uri:'http://www.fraiche.com.mx/tres-d/images/20190328_banner_2_ilumina.jpg'}}/>
             <Image style = {styles.containergal} source = {{uri:'http://www.fraiche.com.mx/tres-d/images/banner4You.jpg'}}/>
             <Image style = {styles.containergal} source = {{uri:'http://www.fraiche.com.mx/tres-d/images/20190328_banner_5_torso_woman.jpg'}}/>
