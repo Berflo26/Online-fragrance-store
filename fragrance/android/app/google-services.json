@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "269399726410",
+    "firebase_url": "https://fraiche-a3cd4.firebaseio.com",
+    "project_id": "fraiche-a3cd4",
+    "storage_bucket": "fraiche-a3cd4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:269399726410:android:85e9b02f3e6e3c130dc9b3",
+        "android_client_info": {
+          "package_name": "com.company.fraiche1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "269399726410-56n643g514r8mh8d187vvui03r2j3g6a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.company.fraiche1",
+            "certificate_hash": "ee5f739afd97e18959da63d9a9d6be6d3cfddb06"
+          }
+        },
+        {
+          "client_id": "269399726410-9nvh2964gl7vsc3cmhi2siskmbgblek4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlPb8VEeONOURDjUxpFHRaS9nJ0SInzUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "269399726410-9nvh2964gl7vsc3cmhi2siskmbgblek4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
