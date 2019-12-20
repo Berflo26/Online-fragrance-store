@@ -1,2 +1,2 @@
 # Online-fragrance-store
-Tienda en linea de venta de perfumes 
+Tienda de catalogos de perfumes 
