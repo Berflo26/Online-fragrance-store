@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import { GoogleSignin } from 'react-native-google-signin';
+import firebase from 'react-native-firebase'
 
 import {
   View,
@@ -17,6 +19,7 @@ import bgImage from '../images/imglogin6.png';
 import logo from '../images/imglogin4.png';
 
 const {width: WIDTH} = Dimensions.get('window');
+
 
 const Login = props => {
   const {cambiarPantalla} = props;
