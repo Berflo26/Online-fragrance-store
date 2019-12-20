@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import { GoogleSignin } from 'react-native-google-signin';
-import firebase from 'react-native-firebase'
+
 
 import {
   View,
@@ -43,6 +42,8 @@ const Login = props => {
           underlineColorAndroid="transparent"
         />
       </View>
+
+      <Text>Te amo</Text>
       
       <View style={styles.inputContainer}>
         <TextInput
