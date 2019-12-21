@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 
-
 import {
   View,
   Text,
@@ -11,14 +10,13 @@ import {
   Dimensions,
   TouchableOpacity,
   Button,
-  StatusBar,
+  StatusBar, 
 } from 'react-native';
 
 import bgImage from '../images/imglogin6.png';
 import logo from '../images/imglogin4.png';
 
 const {width: WIDTH} = Dimensions.get('window');
-
 
 const Login = props => {
   const {cambiarPantalla} = props;
@@ -44,7 +42,7 @@ const Login = props => {
       </View>
 
       <Text>Te amo</Text>
-      
+
       <View style={styles.inputContainer}>
         <TextInput
           style={styles.input}
@@ -69,9 +67,7 @@ const Login = props => {
         style={styles.text2}
         onPress={() => {
           props.navigation.navigate('Registrar');
-        }}>
-        
-      </Text>
+        }}></Text>
     </ImageBackground>
   );
 };
@@ -108,7 +104,7 @@ const styles = StyleSheet.create({
     height: 48,
     borderRadius: 25,
     fontSize: 25,
-    textAlign: 'center',
+    textAlign: 'center', 
     backgroundColor: 'rgba(0, 0, 0, 0.35)',
     marginHorizontal: 25,
     color: 'white',
