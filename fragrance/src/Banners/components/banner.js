@@ -19,15 +19,20 @@ import {
 
 const Banner1 = (props) => {
 
-    const {cambiarPantalla} = props;
+    const {
+        catalogo,
+    } = props;
 
     return(
         <SafeAreaView>
-        <View>
-        <Text>
-            hola tabla
-        </Text>
-        </View>
+            <Image
+                style={{
+                    width: 500,
+                    height: 100,
+                    resizeMode: 'cover',
+                }}
+                source={{ uri: catalogo.url, }}
+            />
         </SafeAreaView>
     );
 

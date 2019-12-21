@@ -108,7 +108,7 @@ const styles = StyleSheet.create({
     height: 48,
     borderRadius: 25,
     fontSize: 25,
-    paddingLeft: 100,
+    textAlign: 'center',
     backgroundColor: 'rgba(0, 0, 0, 0.35)',
     marginHorizontal: 25,
     color: 'white',

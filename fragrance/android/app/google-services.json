@@ -1,42 +1,42 @@
 {
   "project_info": {
-    "project_number": "269399726410",
-    "firebase_url": "https://fraiche-a3cd4.firebaseio.com",
-    "project_id": "fraiche-a3cd4",
-    "storage_bucket": "fraiche-a3cd4.appspot.com"
+    "project_number": "680258786925",
+    "firebase_url": "https://fragancias-edf16.firebaseio.com",
+    "project_id": "fragancias-edf16",
+    "storage_bucket": "fragancias-edf16.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:269399726410:android:85e9b02f3e6e3c130dc9b3",
+        "mobilesdk_app_id": "1:680258786925:android:ed1077c7f0061df6709164",
         "android_client_info": {
-          "package_name": "com.company.fraiche1"
+          "package_name": "com.fragrance"
         }
       },
       "oauth_client": [
         {
-          "client_id": "269399726410-56n643g514r8mh8d187vvui03r2j3g6a.apps.googleusercontent.com",
+          "client_id": "680258786925-fe7p27547e67nc523us00l0uq1kistcs.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.company.fraiche1",
-            "certificate_hash": "ee5f739afd97e18959da63d9a9d6be6d3cfddb06"
+            "package_name": "com.fragrance",
+            "certificate_hash": "b415a0e0a4d07d44ab9610434eb16c3fe8371b78"
           }
         },
         {
-          "client_id": "269399726410-9nvh2964gl7vsc3cmhi2siskmbgblek4.apps.googleusercontent.com",
+          "client_id": "680258786925-kl3tm4mvvhf0nu27r0ncse2p05dl48uc.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAlPb8VEeONOURDjUxpFHRaS9nJ0SInzUs"
+          "current_key": "AIzaSyBdpeUANyDzzkr2IdTmAuoDidJhrl6db1w"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "269399726410-9nvh2964gl7vsc3cmhi2siskmbgblek4.apps.googleusercontent.com",
+              "client_id": "680258786925-kl3tm4mvvhf0nu27r0ncse2p05dl48uc.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -4,8 +4,8 @@ import React from 'react';
 
 import Login from '../Login/login';
 import Registrar from '../Registro/registrar';
-import Home from '../Homepage/home';
-import Banner1 from '../Banners/banner1';
+import Home from '../Homepage/containers/home-page-container';
+import Banner from '../Banners/containers/banner-container';
 
 const navegacion = createStackNavigator ({
     Login: {
@@ -17,8 +17,8 @@ const navegacion = createStackNavigator ({
     home: {
         screen: Home, navigationOptions:{header:null}
     },
-    banner1: {
-        screen: Banner1, navigationOptions:{header:null}
+    banner: {
+        screen: Banner, navigationOptions:{header:null}
     } 
 })
 export default createAppContainer (navegacion);
