@@ -4,14 +4,17 @@ import {StyleSheet, Text, View, Navigator, Route, Switch} from 'react-native';
 import * as firebase from 'firebase';
 import Login from '../login';
 import Home from '../../Homepage/components/home';
-
+import Firebase from '../../lib/firebase';
 export default class logincontainer extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
       initialView: null,
       userLoaded: false,
-    };
+    }
+    this.getInitialView()
+    this.getInitialView = this.getInitialView.bind(this)
   }
 
   getInitialView() {
@@ -32,8 +35,6 @@ export default class logincontainer extends Component {
       case 'Login':
         return <Login navigator={navigator} />;
     }
-    this.getInitialView()
-    this.getInitialView = this.getInitialView.bind(this)
   }
 
   configureScene(route){

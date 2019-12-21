@@ -14,16 +14,20 @@ class BannerContainer extends Component {
   }
 
   render() {
-    const {catalogo} = this.state;
+    const {
+      catalogo,
+    } = this.state;
 
     return (
       <>
         {catalogo !== null ? (
           <Banner catalogo={catalogo} />
         ) : (
-          <Text style={styles.deText}>Cargando Perfumería</Text>
+          <>
+            <Text style={styles.deText}>Cargando Perfumería</Text>
+            <ProgressBA />
+          </>
         )}
-        <ProgressBA />
       </>
     );
   }

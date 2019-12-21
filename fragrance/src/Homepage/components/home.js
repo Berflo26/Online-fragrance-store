@@ -28,8 +28,9 @@ const Home = props => {
   return (
     <SafeAreaView>
       <ScrollView>
-        <View style={styles.container}></View>
-
+        <View style={styles.container}>
+          <Header />
+        </View>
         <View>
           {listadoDeCatalogos &&
             listadoDeCatalogos.map(item => {

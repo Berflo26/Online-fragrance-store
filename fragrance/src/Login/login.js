@@ -16,61 +16,65 @@ import {
 import bgImage from '../images/imglogin6.png';
 import logo from '../images/imglogin4.png';
 
+
 const {width: WIDTH} = Dimensions.get('window');
 
-const Login = props => {
-  const {cambiarPantalla} = props;
-
-  return (
-    <ImageBackground source={bgImage} style={styles.backgroundContainer}>
-      <StatusBar backgroundColor="#FBCECB" />
-
-      <View style={styles.logoContainer}>
-        <Image source={logo} style={styles.logo} />
-        <Text style={styles.logoText}>FRAGRANCE</Text>
-        <Text style={styles.logoText2}>¡Perfumando Nicaragua!</Text>
-      </View>
-
-      <View style={styles.inputContainer}>
-        <TextInput
-          defaultValue={''}
-          style={styles.input}
-          placeholder={'Username'}
-          placeholderTextColor={'rgba(255, 255, 255, 0.7)'}
-          underlineColorAndroid="transparent"
-        />
-      </View>
-
-      <Text>Te amo</Text>
-
-      <View style={styles.inputContainer}>
-        <TextInput
-          style={styles.input}
-          placeholder={'Password'}
-          secureTextEntry={true}
-          placeholderTextColor={'rgba(255, 255, 255, 0.7)'}
-          underlineColorAndroid="transparent"
-        />
-      </View>
-
-      <TouchableOpacity
-        style={styles.btnLogin}
-        onPress={() => {
-          props.navigation.navigate('home');
-        }}>
-        <Text style={styles.text}>Login</Text>
-      </TouchableOpacity>
-
-      <Text></Text>
-
-      <Text
-        style={styles.text2}
-        onPress={() => {
-          props.navigation.navigate('Registrar');
-        }}></Text>
-    </ImageBackground>
-  );
-};
+export default class Login extends Component{
+  
+    render(){
+      const {cambiarPantalla} = props;
+  
+      return (
+        <ImageBackground source={bgImage} style={styles.backgroundContainer}>
+          <StatusBar backgroundColor="#FBCECB" />
+    
+          <View style={styles.logoContainer}>
+            <Image source={logo} style={styles.logo} />
+            <Text style={styles.logoText}>FRAGRANCE</Text>
+            <Text style={styles.logoText2}>¡Perfumando Nicaragua!</Text>
+          </View>
+    
+          <View style={styles.inputContainer}>
+            <TextInput
+              defaultValue={''}
+              style={styles.input}
+              placeholder={'Username'}
+              placeholderTextColor={'rgba(255, 255, 255, 0.7)'}
+              underlineColorAndroid="transparent"
+            />
+          </View>
+    
+          <View style={styles.inputContainer}>
+            <TextInput
+              style={styles.input}
+              placeholder={'Password'}
+              secureTextEntry={true}
+              placeholderTextColor={'rgba(255, 255, 255, 0.7)'}
+              underlineColorAndroid="transparent"
+            />
+          </View>
+    
+          <TouchableOpacity
+            style={styles.btnLogin}
+            onPress={() => {
+              props.navigation.navigate('home');
+            }}>
+            <Text style={styles.text}>Login</Text>
+          </TouchableOpacity>
+    
+          <Text> </Text>
+    
+          <Text
+            
+            style={styles.text2}
+            onPress={() => {
+              props.navigation.navigate('Registrar');
+            }}>¿Aún no tienes cuenta, Resgistrate ya...?</Text>
+        </ImageBackground>
+      );
+    
+    }
+}
 
 const styles = StyleSheet.create({
   backgroundContainer: {
@@ -138,4 +142,3 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Login;
