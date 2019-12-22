@@ -30,8 +30,10 @@ const Home = props => {
       <ScrollView>
         <View style={styles.container}>
           <Header />
+          
         </View>
         <View>
+        
           {listadoDeCatalogos &&
             listadoDeCatalogos.map(item => {
               return (

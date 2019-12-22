@@ -65,6 +65,11 @@ const styles = StyleSheet.create({
   deText: {
     textAlign: 'center',
     alignItems: 'flex-end',
+    fontSize: 22,
+    textAlign: 'center',
+    position: 'relative',
+    marginTop: 200,
+    color: 'gray',    
   },
 });
 export default BannerContainer;

@@ -40,7 +40,7 @@ const Banner1 = props => {
         <>
           <Text style={styles.text}>Catalogo de Perfumes</Text>
           <FlatList
-            style={{width: '100%', height: '100%'}}
+            style={{width: '120%', height: '180%', marginHorizontal: 5,}}
             data={catalogo.perfumes}
             renderItem={({item}) => {
               console.log('Item: ', item);
@@ -50,14 +50,15 @@ const Banner1 = props => {
                     source={{uri: item.url}}
                     style={{width: 100, height: 100}}
                   />
-                  <Text style={styles.text1}>{item.nombre}</Text>
+                  <Text style={styles.text12}>{item.nombre}</Text>
                   <Text style={styles.text1}>{item.descripcion}</Text>
-                  <Text style={styles.text1}>{item.precio}</Text>
+                  <Text style={styles.text13}>{item.precio}</Text>
                 </TouchableOpacity>
               );
             }}
-            numColumns={2}
-            horizontal={false}
+            numColumns={4}
+            backgroundColor= 'white'
+            columnWrapperStyle= {{marginTop: 10, marginLeft:5,}}
           />
         </>
       )}
@@ -77,7 +78,23 @@ const styles = StyleSheet.create({
     color: 'gray',
     fontSize: 12,
     textAlign: 'left',
-    marginLeft: 10,
+    marginLeft: 12,
+    fontFamily: 'san-serif',
+    
+  },
+  text12: {
+    color: 'crimson',
+    fontSize: 18,
+    textAlign: 'left',
+    marginLeft: 12,
+    fontFamily: 'san-serif'
+  },
+  text13: {
+    color: 'gray',
+    fontSize: 25,
+    textAlign: 'left',
+    marginLeft: 12,
+    fontFamily: 'san-serif'
   },
 });
 export default Banner1;
